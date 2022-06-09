@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<div align="center">
+	<img src="imagen.jpg" class="img-fluid">
+</div>	
+<hr>
+<body background="DSC03399.jpg">
+<font color="#0404B4">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</font>
+<head>
+	<title>controles</title>
+	<meta charset="ISO-8849-1">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="hola.css" medida="screen">
+	
+</head>
+<body>
+<h1>Controles en archivos .html</h1>
+<h3>Los documentos html pueden ejecutar código en lenguaje JavaScript (JS).
+El código puede estar embebido en el archivo, aunque es más conveniente que se encuentre en un archivo vinculado.</h3>
+<h3>Debido a que solo vamos a utilizar documentos html para oficiar de interface gráfica con el usuario, necesitamos un mecanismo de Entrada/Salida hacia/desde nuestro programa (script ) de JS.</h3>
+<!-- Hacemos un recuadro con una leyenda en el formulario -->
+<fieldset>
+<div class="card">
+	<div class="card-header">
+	<legend><center>Formulario</legend></center>
+</div>
+  <div class="card-body">
+	
+	<!-- Los datos de entrada se realizarán por -->
+	<div class="input-group">
+  <span class="input-group-text">APELLIDO Y NOMBRE</span>
+  <input type="text" aria-label="First name" class="form-control" id="apellido">
+  <input type="text" aria-label="Last name" class="form-control" id="nombre">
+</div>
+<br>
+	<p><label>Edad: <input type=number id="edad" name="edad"></label></p>
+	<p><label>Peso: <input type="number" id="peso" name="peso"></label></p>
+	<p><label>Telefono: <input type="number" id="telefono" name="telefono"></label></p>
+	<p><label>DNI:<input type="number" id="documento" name="documento"></label></p>
+
+	 <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Nacionalidad</label>
+    <input type="text" class="form-control" id="nacionalidad" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label class="form-label">Provincia</label>
+    <select class="form-select" id="provincia" required>
+      <option selected disabled value="">Ingresa la Provincia</option>
+		<option>Ciudad Autónoma de Buenos Aires</option>
+		<option>Catamarca</option>
+		<option>Chaco</option>
+		<option>Chubut</option>
+		<option>Córdoba</option>
+		<option>Corrientes</option>
+		<option>Entre Ríos</option>
+		<option>Formosa</option>
+		<option>Jujuy</option>
+		<option>La Pampa</option>
+		<option>La Rioja</option>
+		<option>Mendoza</option>
+		<option>Misiones</option>
+		<option>Neuquén</option>
+		<option>Río Negro</option>
+		<option>Salta</option>
+		<option>San Juan</option>
+		<option>San Luis</option>
+		<option>Santa Cruz</option>
+		<option>Santa Fe</option>
+		<option>Santiago del Estero</option>
+		<option>Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+		<option>Tucumán</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+	<br>
+	<!-- La ejecución la iniciamos con un botón -->
+	<label><button type="button" onclick="main()" class="btn btn-primary">VOLCAR LOS DATOS EN LA CONSOLA</button></label>
+
+</fieldset>
+
+</div></div>
+<br>
+<hr>
+<h1><center> DATOS DEL USUARIO </h1></center>
+
+
+<table border="1" class="table table-dark table-striped">
+	<tr>
+		<td><p>Apellido:</p></td><td><div id="ape"></div></td>
+	</tr>
+	<tr>	
+		<td><p>Nombre:</p></td><td><div id="nom"></div></td>
+	</tr>
+	<tr>	
+		<td><p>Edad:</p></td><td><div id="ed"></div></td>
+	</tr>
+	<tr>	
+		<td><p>Peso:</p></td><td><div id="pe"></div></td>
+	</tr>	
+		<td><p>Telefono:</p></td><td><div id="tele"></div></td>
+	</tr>
+	<tr>
+		<td><p>DNI:</p></td><td><div id="dni"></div></td>
+	</tr>
+	<tr>
+		<td><p>Nacionalidad:</p></td><td><div id="na"></div></td>
+	<tr>
+		<td><p>Provincia:</p></td><td><div id="pro"></div></td>	
+</table>
+</body>
+</html>

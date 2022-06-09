@@ -1,0 +1,35 @@
+﻿body {
+      padding-left: 3em;
+}      
+.sangrado {
+  text-indent: 1.0cm;
+}
+
+.rojo {
+  color: #f00;
+}
+
+.san_rojo {
+  text-indent: 1.0cm;
+  color: #00f;
+}
+
+table {
+     border-collapse: collapse;
+     border: solid thick;
+     width:90%;
+     margin-right:auto;
+     margin-left:auto;	
+  }
+  colgroup, tbody { 
+    border: solid thin; 
+  }
+  td {
+    border: solid thin;
+    height: 2em;
+    width: 15em;
+    text-align: center;
+    padding: 20;
+    font-family:Rockwell,Arial;
+    font-size: larger;
+ }
